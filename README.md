@@ -1,4 +1,4 @@
-<h1 align="center">Node Proxy Network Client</h1>
+<h1>Node Proxy Network Client<img height="50" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg"></h1>
 
 The node-proxy-network-client is a Node.js module designed to simplify making HTTP requests with proxy support using node-fetch. It is particularly useful for applications requiring to bypass network restrictions or mask IP addresses.
 
@@ -25,7 +25,7 @@ To make a request with custom options, utilize the fetch function. The API mirro
 
 ```
 const { fetch } = require('node-proxy-network-client');
-const url = 'https://example.com';
+const url = 'https://example.com/api/data';
 const options = {};
 fetch(url, options)
     .then(response => response.json())
@@ -43,7 +43,7 @@ To make a GET request through a proxy, use the sendGetRequestAsync function:
 
 ```
 const { proxyNetworkClient } = require('node-proxy-network-client');
-const url = 'https://example.com/api/data';
+const url = 'https://example.com/api/getData';
 const options = {};
 proxyNetworkClient.sendGetRequestAsync(url, options)
     .then(response => {
@@ -95,9 +95,9 @@ const client = new ConfidentialClientApplication({
 });
 ```
 
-<h3>Note</h3>
+<h2>Note</h2>
 Ensure your proxy environment variable is correctly configured for the module to function as expected.
 
 
-<h3>License</h3>
+<h2>License</h2>
 Licensed under the Apache License, Version 2.0. See the LICENSE file for more details.
