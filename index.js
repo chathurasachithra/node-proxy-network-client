@@ -19,9 +19,9 @@ const sendGetRequestAsync = async (url, options) => {
 
 const sendPostRequestAsync = async(url, options) => {
     const agent = new ProxyAgent();
-    const sendingOptions = options || {};
-    sendingOptions.method = 'post';
-    const response = await fetch(url, { agent, ...sendingOptions });
+    options = options || {};
+    options.method = 'post';
+    const response = await fetch(url, { agent, ...options });
     const json = await response.json();
     return {
         headers: Object.create(Object.prototype, response.headers.raw()),
