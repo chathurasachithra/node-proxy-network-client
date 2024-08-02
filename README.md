@@ -1,4 +1,4 @@
-<h1>Node Proxy Network Client<img height="50" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg"></h1>
+<h1>Proxy Network Client<img height="50" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg"></h1>
 
 The node-proxy-network-client is a Node.js module designed to simplify making HTTP requests with proxy support using node-fetch. It is particularly useful for applications requiring to bypass network restrictions or mask IP addresses.
 
